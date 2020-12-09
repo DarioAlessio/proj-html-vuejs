@@ -2,119 +2,61 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font:15px 'Open Sans', sans-serif;
+}
+
+header{
+  height: 300px;
+  width: 100%;
+  background-color: #b6b8d1;
+	text-align:center;
+}
+
+img{
+  max-height:  100px;
+  max-width: 100px;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+nav{
+	display: inline-block;
+	margin: 0 auto 45px;
+}
+
+nav a{
+	display:inline-block;
+	padding: 18px 30px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 1;
+	background-color: transparent;
 
 }
 
-/* parte intro */
+/* sfondo attivo imp colore */
 
-
-
-.introNav {
-  position: relative;
-  width: 60%;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
+nav.home .home,
+nav.pages .pages,
+nav.courses .courses,
+nav.features .features,
+nav.blog .blog,
+nav.shop .shop {
+  background-color: #b6b8d1;
 }
 
-
-
-
-
-.blu {
-  background-color: #fe775a;
-  border-radius: 3px;
-  padding: 7px 14px;
-  text-align: center;
-  color: white;
-  border: 2px solid #fe775a;
+input{
+  height: 30px;
+  width: 120px;
+  padding-left: 12px;
+  border: none;
 }
 
-.orange:hover {
-  background-color: white;
-  color: #fe775a;
-}
-
-
-.introNav::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-a {
-  text-decoration: none;
-  color: #33475b;
-}
-
-a:hover {
-  color: #fe775a;
-}
-
-
-#white{
-  background-color: white;
-}
-
-.ulNavLeft {
-  float: left;
-  width: calc(100% / 2);
-  padding: 9px 0px;
-
-}
-
-#paddingNav {
-  padding: calc(30px / 2) 0px;
-}
-
-.ulNavRight {
-  color: #00a4bf;
-  float: left;
-  width: calc(100% / 2);
-  text-align: right;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  margin-right: 2%;
-}
-
-
-/* fine intro */
-
-
-
-/* inizio parte jumbotron */
-
-
-
-main::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.jumbotron {
-  height: 680px;
-  background-image: url("jumbotron.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.textjumbo{
-  position: relative;
-  width: 60%;
-  margin: auto;
-  top: 25%;
-  transform: translateY(-50%);
-
-}
+/* parte jumbotron-------------------------- */

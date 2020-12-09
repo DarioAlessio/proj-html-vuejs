@@ -14,45 +14,40 @@
 
       <header>
 
-        <div class="introNav">
+        <img :src="imageLogo" alt="">
 
-          <ul class="ulNavLeft">
-            <li><img src="" ></li>
-          </ul>
+        <nav :class="active">
 
-          <ul id="paddingNav" class="ulNavRight">
+           <a href="#" class="home" v-on:click="makeActive('home')">Home</a>
+           <a href="#" class="pages" v-on:click="makeActive('pages')">Pages</a>
+           <a href="#" class="courses" v-on:click="makeActive('courses')">Courses</a>
+           <a href="#" class="features" v-on:click="makeActive('features')">Features</a>
+           <a href="#" class="blog" v-on:click="makeActive('blog')">Blog</a>
+           <a href="#" class="shop" v-on:click="makeActive('shop')">Shop</a>
 
-            <li><a href="#">Software</a></li>
-            <li><a href="#">Princing</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Partner</a></li>
-            <li><a href="#">About</a></li>
+           <input type="text" name="" value="" placeholder="Search...">
 
-          </ul>
+
+        </nav>
+
+        <!-- inizio parte di jumbotron -->
+
+        <div class="jumbotron">
+
+           <div class="textjumbo">
+
+             <h1>Complete Your <br> Dreams in JavaS <br> Programming </h1>
+             <br>
+             <p>Learn any coding progrm in distance and for a  <br> reasonable fee. You don't have to struggle alone,<br>you've got our assistance and help</p>
+             <br>
+             <button class="blu">Donwload free E-book</button>
+
+           </div>
 
         </div>
 
 
-       <!-- fine intro -->
-
-       <!-- inizio parte di jumbotron -->
-
-       <div class="jumbotron">
-
-         <div class="textjumbo">
-
-           <h1>Complete Your <br> Dreams in JavaS <br> Programming </h1>
-           <br>
-           <p>Learn any coding progrm in distance and for a  <br> reasonable fee. You don't have to struggle alone,<br>you've got our assistance and help</p>
-           <br>
-           <button class="blu">GetHubspotFree</button>
-
-         </div>
-
-       </div>
-
-
-    </header>
+      </header>
 
 
 
