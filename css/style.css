@@ -2,22 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body{
   font:15px 'Open Sans', sans-serif;
 }
 
+
 header{
-  height: 300px;
+  height: 50px;
   width: 100%;
   background-color: #b6b8d1;
-	text-align:center;
+  text-align: center;
 }
+
 
 img{
   max-height:  100px;
   max-width: 100px;
+  margin-right: 100px;
 }
 
 a:hover{
@@ -26,12 +30,14 @@ a:hover{
 
 nav{
 	display: inline-block;
-	margin: 0 auto 45px;
+  width: 70%;
+	margin: 0 auto;
+  /* position: relative; */
 }
 
 nav a{
 	display:inline-block;
-	padding: 18px 30px;
+	padding: 18px 25px;
 	color: #fff;
 	font-weight: bold;
 	font-size: 12px;
@@ -40,6 +46,7 @@ nav a{
 	background-color: transparent;
 
 }
+
 
 /* sfondo attivo imp colore */
 
@@ -59,4 +66,84 @@ input{
   border: none;
 }
 
-/* parte jumbotron-------------------------- */
+nav i{
+  /* position: absolute; */
+  border: none;
+
+}
+
+/* parte jumbotron
+inizio main -------------------------- */
+main{
+  height: 500px;
+  background-color:#b6b8d1;
+}
+
+
+
+.jumbotron {
+  display: flex;
+
+}
+
+/* layout importante-------------------------------- */
+.textjumbo{
+  margin: auto;
+  width: 70%;
+  padding-left: 40px;
+  padding-top: 100px;
+
+}
+
+.blu {
+  background-color: #22ad96;
+  border-radius: 3px;
+  padding: 7px 14px;
+  text-align: center;
+  color: white;
+  border: 2px solid  #22ad96;
+}
+
+/* DA DOMANDARE  */
+.image-big{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.container-footer{
+  display: flex;
+}

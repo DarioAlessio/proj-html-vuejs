@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -14,10 +15,10 @@
 
       <header>
 
-        <img :src="imageLogo" alt="">
-
+        <!-- navbar +  input + immagine logo -->
         <nav :class="active">
 
+           <img :src="imageLogo" alt="">
            <a href="#" class="home" v-on:click="makeActive('home')">Home</a>
            <a href="#" class="pages" v-on:click="makeActive('pages')">Pages</a>
            <a href="#" class="courses" v-on:click="makeActive('courses')">Courses</a>
@@ -26,13 +27,20 @@
            <a href="#" class="shop" v-on:click="makeActive('shop')">Shop</a>
 
            <input type="text" name="" value="" placeholder="Search...">
+           <i class="fas fa-search"></i>
 
 
         </nav>
 
-        <!-- inizio parte di jumbotron -->
+      </header>
 
+
+
+      <main>
+
+        <!-- inizio parte di jumbotron -->
         <div class="jumbotron">
+
 
            <div class="textjumbo">
 
@@ -43,22 +51,57 @@
              <button class="blu">Donwload free E-book</button>
 
            </div>
+           <div class="image-big">
+
+
+           </div>
 
         </div>
 
 
-      </header>
-
-
-
-
-
-
-      <main>
 
       </main>
 
       <footer>
+
+        <div class="container-footer">
+          <!-- section left -->
+          <div class="address">
+
+            <h2>Address</h2>
+            <p>{{address}}</p>
+            <p>{{telephone}}</p>
+            <p>{{email}}</p>
+
+            <div class="icon" v-for="social in infoSocial">
+              <a :href="social.href"> <i :class="social.icon"></i> </a>
+            </div>
+
+
+          </div>
+          <!-- section centre -->
+          <div class="explore">
+
+            <h2>Explore</h2>
+
+            <li v-for="link in explore">
+              <a :href="link.href">{{link.link}}</a>
+            </li>
+
+          </div>
+          <!-- section right -->
+          <div class="information">
+
+            <h2>information</h2>
+
+            <li v-for="link in information">
+              <a :href="link.href">{{link.link}}</a>
+            </li>
+
+          </div>
+
+
+        </div>
 
       </footer>
 
