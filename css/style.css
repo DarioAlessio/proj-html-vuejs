@@ -497,6 +497,7 @@ main{
 .close-section{
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .close-1{
@@ -514,10 +515,78 @@ main{
   color:#22ad96;
 }
 
-/* love section */
+/* section fake carousel */
+#back-ground{
+  background-color: #f0efef;
+}
 
+.container-carousel{
+  width: 70%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+}
 
+.card-carousel{
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  padding-top: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+}
 
+.card-carousel >img {
+  border-radius: 100%;
+  width: 100px;
+  position: absolute;
+  top: -50px;
+  left: 75px;
+}
+
+.card-carousel >p{
+  color:#513e5e;
+  font-size: 14px;
+}
+
+.card-carousel >h5{
+  padding-top: 20px;
+}
+
+.last-carousel{
+  color: #96a6a5;
+  font-size: 10px;
+
+}
+
+/* ball carousel */
+
+.ball-carousel{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.dot-1{
+  height: 15px;
+  width: 15px;
+  background-color: #513e5e;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+/* online certification section */
 
 
 
