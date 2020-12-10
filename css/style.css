@@ -75,14 +75,14 @@ nav i{
 /* parte jumbotron
 inizio main -------------------------- */
 main{
-  height: 500px;
-  background-color:#b6b8d1;
 }
 
 
 
 .jumbotron {
   display: flex;
+  background-color:#b6b8d1;
+
 
 }
 
@@ -108,7 +108,59 @@ main{
 .image-big{
 }
 
+ /* section build your dream  */
 
+
+.text-build-dream{
+   text-align: center;
+   padding-top: 70px;
+ }
+
+.text-build-dream > p {
+  font-size: 12px;
+  padding-bottom: 15px;
+
+}
+
+.title-type {
+  font-size: 32px;
+  color: #513e5e
+}
+
+.word-type{
+  font-size: 32px;
+  color: #01afc8;
+}
+
+
+.container-text{
+  width: 70%;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.photo-text{
+  padding: 5px 20px;
+}
+
+.photo-text > h4{
+  padding-top: 20px;
+}
+
+.photo-text >img{
+  max-width: 100px;
+  margin: auto;
+}
+
+.photo-text > p{
+  font-size: 10px;
+}
+
+/* ------------- aggiungere freccia----------------- */
 
 
 
