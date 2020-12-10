@@ -301,9 +301,67 @@ main{
 
 
 
+/* section register */
 
+.container-register{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding-top: 200px;
+  position:relative;
 
+}
 
+.text-build-register{
+  padding-left: 100px;
+
+}
+
+.text-build-register > p{
+  padding-bottom: 15px;
+
+}
+.text-build-register > span{
+  padding: 12px 0;
+
+}
+
+.list{
+  padding: 8px 0;
+
+  }
+
+  .text-build-register > button{
+    margin: 6px 0;
+  }
+/* image register--------------------- */
+.container-1{
+  padding-left: 80px;
+  padding-top: 120px;
+}
+
+.section-image-register-1{
+  width: 300px;
+  height: 300px;
+  background-image: url('../img/underlay-shape-grey.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.re-image-big{
+  width: 300px;
+  position: absolute;
+  top: -80px;
+  right: -50px;
+}
+
+.re-icon{
+  width: 100px;
+  position: absolute;
+  top: 120px;
+  right: -120px;
+}
 
 
 
