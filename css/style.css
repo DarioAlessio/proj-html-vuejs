@@ -247,11 +247,55 @@ main{
 
 /* section latest featured */
 
+.container-latest{
+  width: 70%;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
 
+.container-latest-bis{
+  width: 70%;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-bottom: 60px;
 
+}
 
+.latest-pic{
+  padding-right: 18px;
+}
 
+.latest-pic > img{
+  max-width: 250px;
+}
 
+.latest-pic > p, span{
+  padding-left: 12px;
+}
+
+.under-pc{
+  padding:12px 12px;
+
+}
+
+.under-pc > img{
+  border-radius: 100%
+}
+
+.under-pc > span{
+  padding-top: 15px;
+}
+
+.button-latest{
+  text-align: center;
+  padding-bottom: 5px;
+}
 
 
 
