@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <link rel="stylesheet" href="css/style.css">
@@ -62,6 +63,7 @@
 
       </main>
 
+      <!-- inizio footer -->
       <footer>
 
         <div class="container-footer">
@@ -84,20 +86,25 @@
 
             <h2>Explore</h2>
 
-            <li v-for="link in explore">
+            <div v-for="link in explore" class="text-ex">
               <a :href="link.href">{{link.link}}</a>
-            </li>
+            </div>
 
           </div>
           <!-- section right -->
           <div class="information">
 
-            <h2>information</h2>
+            <h2>Information</h2>
 
-            <li v-for="link in information">
+            <div v-for="link in information" class="text-info">
               <a :href="link.href">{{link.link}}</a>
-            </li>
+            </div>
 
+          </div>
+
+          <!-- button -->
+          <div class="button-up">
+            <a href="#"><i class="fas fa-arrow-up"></i></a>
           </div>
 
 
