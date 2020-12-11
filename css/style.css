@@ -571,25 +571,25 @@ main{
 }
 
 .dot-1{
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 5px;
   background-color: #513e5e;
-  border-radius: 100%;
+  border-radius: 50%;
   display: inline-block;
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 5px;
   background-color: #bbb;
-  border-radius: 100%;
+  border-radius: 50%;
   display: inline-block;
 }
 
 /* online certification section last main*/
 #online-back{
   background-color: #f0efef;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 
 }
 .online-section{
@@ -611,7 +611,7 @@ main{
 }
 
 .online-section > p{
-  font-size: 25px;
+  font-size: 22px;
   color: #513e5e;
   font-weight: 600;
   margin-bottom: 16px;
@@ -626,29 +626,23 @@ main{
   text-align: center;
   color: white;
   border: 2px solid  #22ad96;
+  margin-top: 20px;
 }
 
 /* immaine */
 .image-online-1{
+  width: 100px;
   position: absolute;
-  top: 100px;
-  left:100px;
+  top: 65px;
+  left:270px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.image-online-2{
+  width: 100px;
+  position: absolute;
+  top: 35px;
+  right: 270px;
+}
 
 
 /* footer */
