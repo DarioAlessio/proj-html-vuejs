@@ -3,10 +3,10 @@ var header = new Vue({
   data:{
     // header
     imageLogo: "img/dark-logo.png",
-    active: false,
     navs: [
       {
-        name:"home",
+        name:"Home",
+        open:"true",
         lists:[
           {
             element:"one",
@@ -19,21 +19,8 @@ var header = new Vue({
         ]
       },
       {
-        name:"pages",
-        lists:[
-          {
-            element:"one",
-            href: "#"
-          },
-          {
-            element:"two",
-            href: "#"
-          }
-        ]
-
-      },
-      {
-        name:"courses",
+        name:"Pages",
+        open:"false",
         lists:[
           {
             element:"one",
@@ -47,7 +34,8 @@ var header = new Vue({
 
       },
       {
-        name:"features",
+        name:"Courses",
+        open:"false",
         lists:[
           {
             element:"one",
@@ -61,7 +49,23 @@ var header = new Vue({
 
       },
       {
-        name:"blog",
+        name:"Features",
+        open:"false",
+        lists:[
+          {
+            element:"one",
+            href: "#"
+          },
+          {
+            element:"two",
+            href: "#"
+          }
+        ]
+
+      },
+      {
+        name:"Blog",
+        open:"false",
         lists:[
           {
             element:"one",
@@ -74,7 +78,8 @@ var header = new Vue({
         ]
       },
       {
-        name:"shop",
+        name:"Shop",
+        open:"false",
         lists:[
           {
             element:"one",
@@ -91,5 +96,6 @@ var header = new Vue({
     ]
 
   }
+
 
 });

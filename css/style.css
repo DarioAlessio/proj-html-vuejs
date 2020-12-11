@@ -11,29 +11,53 @@ body{
 
 
 header{
-  height: 50px;
   width: 100%;
-  background-color: #b6b8d1;
+  background-color: #d0d1e2;
   text-align: center;
+  color: #513e5e;
+}
+
+nav{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.nav-bar{
+  font-size: 12px;
+  padding-right: 18px;
+}
+
+.logo > img {
+  max-width:  125px;
+  margin-right:  140px;
+
 }
 
 
-nav > img{
-  max-height:  100px;
-  max-width: 100px;
-  margin-right: 100px;
+.nav-bar > i{
+  color: #513e5e;
+
 }
 
-a:hover{
-	text-decoration:none;
+.icon-nav{
+  padding-right: 3px;
 }
 
-
-/* sfondo attivo imp colore */
-/*
-{
-  background-color: #b6b8d1;
-} */
+.search {
+  background-color: white;
+  height: 60%;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-right: 50px;
+}
 
 input{
   height: 30px;
@@ -42,12 +66,36 @@ input{
   border: none;
 }
 
+.search input {
+  background-color: inherit;
+  border: 0;
+}
+
+.search > i{
+  color: #01afc8;
+}
+.nav-bar:hover{
+  cursor: pointer;
+}
+.search,.icon-nav i:hover {
+  cursor: pointer;
+}
+
+/* dropdown */
+
+
+
+
+/* inizio main */
+
+
+
 
 /* parte jumbotron
 ---------------------inizio main -------------------------- */
 
 .container-jumbo{
-  background-color:#b6b8d1;
+  background-color: #d0d1e2; 
   padding-top: 80px;
   padding-bottom: 50px;
 
@@ -139,8 +187,8 @@ input{
 }
 
 .photo-text > img{
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 150px;
+  max-height: 150px;
   margin: auto;
 }
 

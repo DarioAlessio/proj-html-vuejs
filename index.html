@@ -18,44 +18,63 @@
       <header>
 
         <!-- navbar +  input + immagine logo -->
-        <nav>
+          <nav>
+
+            <div class="logo">
+              <img :src="imageLogo" alt="">
+            </div>
+
+             <div v-for="(nav, index) in navs" class="nav-bar">
+                {{nav.name}}
+                <i class='fas fa-chevron-down'></i>
+             </div>
 
 
+             <div class="icon-nav">
+               <i class='fas fa-shopping-cart'></i>
+               <i class='far fa-user-circle'></i>
+             </div>
 
 
+             <div class="search">
+              <input type="text" name="" value="" placeholder="Search...">
+              <i class="fas fa-search"></i>
+             </div>
 
-        </nav>
+
+          </nav>
 
       </header>
 
     </div>
 
-
-
-
+      <!-- inizio main -->
       <main>
 
         <!-- inizio parte di jumbotron -->
 
         <div class="container-jumbo">
+          <div class="onda">
 
-          <div class="jumbotron">
-
-
-             <div class="textjumbo">
-
-               <h1>Complete Your <br> Dreams in JavaS <br> Programming </h1>
-               <br>
-               <p>Learn any coding progrm in distance and for a  <br>easonable fee. You don't have to struggle alone,<br>you've got our assistance and help</p>
-               <br>
-               <button class="blu"><i class='fas fa-download'></i> Donwload free E-book</button>
-
-             </div>
-             <div class="image-big">
-               <img src="img/home-5-hero-image.png" alt="">
+            <div class="jumbotron">
 
 
-             </div>
+               <div class="textjumbo">
+
+                 <h1>Complete Your <br> Dreams in JavaS <br> Programming </h1>
+                 <br>
+                 <p>Learn any coding progrm in distance and for a  <br>easonable fee. You don't have to struggle alone,<br>you've got our assistance and help</p>
+                 <br>
+                 <button class="blu"><i class='fas fa-download'></i> Donwload free E-book</button>
+
+               </div>
+               <div class="image-big">
+                 <img src="img/home-5-hero-image.png" alt="">
+
+
+               </div>
+
+            </div>
 
           </div>
 
@@ -75,28 +94,28 @@
 
             <div class="photo-text">
               <img src="img/home-5-image-box-01.png" alt="">
-              <h4>Idea Discussion</h4>
+              <h3>Idea Discussion</h3>
               <p>Get teamed with the specialists <br> who work and teach coding for years <br> at famous universities.</p>
               <p>Start now <i class='fas fa-arrow-right'></i></p>
             </div>
 
             <div class="photo-text">
               <img src="img/home-5-image-box-02.png" alt="">
-              <h4>Web Development</h4>
+              <h3>Web Development</h3>
               <p>Learn to start building a webpage from <br> scratch. You decide your own pace, <br> course and speed.</p>
               <p>Start now <i class='fas fa-arrow-right'></i></p>
             </div>
 
             <div class="photo-text">
               <img src="img/home-5-image-box-03.png" alt="">
-              <h4>System Administration </h4>
+              <h3>System Administration </h3>
               <p>Learners are encouraged to study the <br> mechanism and structure of system <br> administration.</p>
               <p>Start now <i class='fas fa-arrow-right'></i></p>
             </div>
 
             <div class="photo-text">
               <img src="img/home-5-image-box-04.png" alt="">
-              <h4>Graphic Design</h4>
+              <h3>Graphic Design</h3>
               <p>Have a passion for graphics and arts?<br> show you talents with confidence and<br> self-assertiveness.</p>
               <p>Start now <i class='fas fa-arrow-right'></i></p>
               <!-- <i class="fas fa-arrow-right"></i> -->
@@ -593,7 +612,6 @@
 
 
 
-
       </main>
     <div id="app">
       <!-- inizio footer -->
@@ -612,19 +630,17 @@
               <a :href="social.href"> <i :class="social.icon"></i> </a>
             </div>
 
-
           </div>
           <!-- section centre -->
           <div class="explore">
 
             <h2>Explore</h2>
-            <!-- le prime tre voci del explore prese...devo capire come girarle -->
+            <!-- le prime tre voci di explore...devo capire come girarle le altre 3-->
             <div v-for="link in explore.slice(explore.length / 2)" class="text-ex">
               <a :href="link.href">{{link.link}}</a>
             </div>
 
           </div>
-
 
           <!-- section right -->
           <div class="information">
