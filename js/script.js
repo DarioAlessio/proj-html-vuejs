@@ -3,11 +3,8 @@
 var app = new Vue({
   el: "#app",
   data: {
-    // header
-    imageLogo: "img/dark-logo.png",
-    active: "home",
-
      // footer
+    copyright:"2020 MaxCoach. All Rights Reserved",
     address: "382 NE 191 St #87394 Miami, FL 33179-3899",
     telephone: "+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)",
     email: "support@maxcoach.com",
@@ -78,10 +75,6 @@ var app = new Vue({
         href: "#"
       }
     ]
-  },
-  methods: {
-		makeActive: function(item){
-			this.active = item;
-		}
-	}
+  }
+
 });

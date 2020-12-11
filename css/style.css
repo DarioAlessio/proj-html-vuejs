@@ -28,36 +28,12 @@ a:hover{
 	text-decoration:none;
 }
 
-nav{
-	display: inline-block;
-  width: 70%;
-	margin: 0 auto;
-  /* position: relative; */
-}
-
-nav a{
-	display:inline-block;
-	padding: 18px 25px;
-	color: #fff;
-	font-weight: bold;
-	font-size: 12px;
-	text-decoration: none;
-	line-height: 1;
-	background-color: transparent;
-
-}
-
 
 /* sfondo attivo imp colore */
-
-nav.home .home,
-nav.pages .pages,
-nav.courses .courses,
-nav.features .features,
-nav.blog .blog,
-nav.shop .shop {
+/*
+{
   background-color: #b6b8d1;
-}
+} */
 
 input{
   height: 30px;
@@ -66,33 +42,37 @@ input{
   border: none;
 }
 
-nav i{
-  /* position: absolute; */
-  border: none;
-
-}
 
 /* parte jumbotron
-inizio main -------------------------- */
-main{
+---------------------inizio main -------------------------- */
+
+.container-jumbo{
+  background-color:#b6b8d1;
+  padding-top: 80px;
+  padding-bottom: 50px;
+
 }
-
-
-
 .jumbotron {
   display: flex;
-  background-color:#b6b8d1;
-
+  position: relative;
+  margin: auto;
+  width: 70%;
+  color: 	#808080;
 
 }
 
-/* layout importante-------------------------------- */
 .textjumbo{
-  margin: auto;
-  width: 70%;
   padding-left: 40px;
-  padding-top: 100px;
+  padding-top: 60px;
+}
 
+.textjumbo > h1{
+  color: #513e5e;
+}
+
+.textjumbo > p{
+  font-size: 12px;
+  padding: 10px 0;
 }
 
 .blu {
@@ -104,8 +84,12 @@ main{
   border: 2px solid  #22ad96;
 }
 
-/* DA DOMANDARE  */
 .image-big{
+  padding-left: 150px;
+}
+.image-big > img{
+  width: 450px;
+
 }
 
  /* section build your dream  */
@@ -119,12 +103,15 @@ main{
 .text-build-dream > p {
   font-size: 12px;
   padding-bottom: 15px;
+  color:#4d4d4d;
 
 }
 
 .title-type {
   font-size: 32px;
-  color: #513e5e
+  color: #513e5e;
+  font-weight: 600;
+
 }
 
 .word-type{
@@ -138,7 +125,6 @@ main{
   margin:auto;
   display: flex;
   justify-content: center;
-  padding-left: 50px;
   padding-top: 50px;
   padding-bottom: 60px;
   text-align: center;
@@ -160,33 +146,45 @@ main{
 
 .photo-text > p{
   font-size: 10px;
+  color:#96a6a5;
 }
 
-/* ------------- aggiungere freccia----------------- */
 
 
 
 
 /* section career perspective */
 
-
+#career{
+  padding-bottom: 150px;
+  padding-top: 100px;
+}
 .container-career{
   display: flex;
   width: 70%;
   margin: auto;
-  padding-bottom: 150px;
-  padding-top: 50px;
+
 
 }
 
 .left-position{
-  width: 500px;
+  width: 300px;
+  height: 300px;
   background-image: url('../img/underlay-shape-lilla.svg');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  margin-top: 100px;
+
 }
 
+.pos-1{
+  padding-bottom: 15px;
+}
+
+.pos-2{
+  padding-bottom: 15px;
+}
 .left-position > img{
  height: 400px;
 }
@@ -199,22 +197,67 @@ main{
 }
 
 .right-position{
-  padding-left: 300px;
+  margin-left: 200px;
 
 }
 
-.white {
+.dropdown{
+  margin-top: 15px;
+  width: 600px;
+  background-color: white;
+  padding: 7px 14px;
+  color: #4d4d4d;
+  border: 2px solid  white;
+  padding: 10px;
+  box-shadow: 0px 20px 20px 0px #f0efef;
+
+}
+.blu-{
+  margin-top: 15px;
   width: 400px;
-  background-color: grey;
-  border-radius: 3px;
+  background-color: #22ad96;
   padding: 7px 14px;
   text-align: center;
-  color: black;
+  color: white;
+  border:  solid  white;
+  padding: 10px;
+  box-shadow: 15px 18px 15px 0px #f0efef;
+
+}
+.white {
+  margin-top: 15px;
+  width: 400px;
+  background-color: white;
+  padding: 7px 14px;
+  text-align: center;
+  color: #4d4d4d;
   border: 2px solid  white;
+  padding: 10px;
+  box-shadow: 15px 18px 15px 0px #f0efef;
 }
 
 
 /* section right da copletare */
+.text-careeer-1{
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.text-careeer-2{
+  font-size: 26px;
+  color: #513e5e;
+  font-weight: 550;
+  padding: 10px 0;
+}
+
+.text-careeer-3{
+  font-size: 26px;
+  color: #22ad96;
+}
+
+.dropdown{
+  width:300px;
+}
 
 
 /* SECTION BIG NUMBER */
@@ -240,8 +283,9 @@ main{
 }
 
 .box > p{
-  color: black;
+  color: #513e53;
   font-size: 12px;
+  font-weight: 600;
 }
 
 
@@ -275,9 +319,27 @@ main{
   max-width: 250px;
 }
 
-.latest-pic > p, span{
+.latest-pic >  span{
   padding-left: 12px;
+  font-size: 10px;
 }
+
+.latest-pic > p{
+  color: #4d4d4d;
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.last-lastet > span{
+font-size: 10px;
+padding-left: 12px;
+color: #96a6a5;
+}
+
+
+
 
 .under-pc{
   padding:12px 12px;
@@ -290,6 +352,8 @@ main{
 
 .under-pc > span{
   padding-top: 15px;
+  font-size: 10px;
+  color: #96a6a5;
 }
 
 .button-latest{
@@ -319,6 +383,7 @@ main{
 
 .text-build-register > p{
   padding-bottom: 15px;
+  color: #96a6a5;
 
 }
 .text-build-register > span{
@@ -328,8 +393,15 @@ main{
 
 .list{
   padding: 8px 0;
+}
 
-  }
+.list > i{
+  color: #22ad96;
+
+}
+.list > span{
+  color: #96a6a5;
+}
 
 .text-build-register > button{
     margin: 6px 0;
@@ -406,7 +478,7 @@ main{
 
 .text-mobile-learn{
   position: absolute;
-  top: 3180px;
+  top: 3680px;
   right: 250px;
 }
 
@@ -539,6 +611,10 @@ main{
   margin-right: 20px;
 }
 
+.color{
+  color:#96a605;
+}
+
 .card-carousel >img {
   border-radius: 100%;
   width: 100px;
@@ -656,7 +732,7 @@ footer{
   display: flex;
   padding-top: 50px;
   padding-left: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 30px;
 
 }
 
@@ -731,4 +807,13 @@ h2, p {
 
 .button-up:hover {
   cursor: pointer;
+}
+
+/* copyright */
+
+.copyright{
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 10px;
+  color: #96a6a5;;
 }

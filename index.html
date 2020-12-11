@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -13,52 +12,55 @@
   </head>
   <body>
 
-    <div id="app">
+
+    <div id="header">
 
       <header>
 
         <!-- navbar +  input + immagine logo -->
-        <nav :class="active">
+        <nav>
 
-           <img :src="imageLogo" alt="">
-           <a href="#" class="home" v-on:click="makeActive('home')">Home</a>
-           <a href="#" class="pages" v-on:click="makeActive('pages')">Pages</a>
-           <a href="#" class="courses" v-on:click="makeActive('courses')">Courses</a>
-           <a href="#" class="features" v-on:click="makeActive('features')">Features</a>
-           <a href="#" class="blog" v-on:click="makeActive('blog')">Blog</a>
-           <a href="#" class="shop" v-on:click="makeActive('shop')">Shop</a>
 
-           <input type="text" name="" value="" placeholder="Search...">
-           <i class="fas fa-search"></i>
+
 
 
         </nav>
 
       </header>
 
+    </div>
+
+
 
 
       <main>
 
         <!-- inizio parte di jumbotron -->
-        <div class="jumbotron">
+
+        <div class="container-jumbo">
+
+          <div class="jumbotron">
 
 
-           <div class="textjumbo">
+             <div class="textjumbo">
 
-             <h1>Complete Your <br> Dreams in JavaS <br> Programming </h1>
-             <br>
-             <p>Learn any coding progrm in distance and for a  <br> reasonable fee. You don't have to struggle alone,<br>you've got our assistance and help</p>
-             <br>
-             <button class="blu">Donwload free E-book</button>
+               <h1>Complete Your <br> Dreams in JavaS <br> Programming </h1>
+               <br>
+               <p>Learn any coding progrm in distance and for a  <br>easonable fee. You don't have to struggle alone,<br>you've got our assistance and help</p>
+               <br>
+               <button class="blu"><i class='fas fa-download'></i> Donwload free E-book</button>
 
-           </div>
-           <div class="image-big">
+             </div>
+             <div class="image-big">
+               <img src="img/home-5-hero-image.png" alt="">
 
 
-           </div>
+             </div>
+
+          </div>
 
         </div>
+
 
         <!-- section build your dream -->
         <section>
@@ -75,28 +77,28 @@
               <img src="img/home-5-image-box-01.png" alt="">
               <h4>Idea Discussion</h4>
               <p>Get teamed with the specialists <br> who work and teach coding for years <br> at famous universities.</p>
-              <p>Start now</p>
+              <p>Start now <i class='fas fa-arrow-right'></i></p>
             </div>
 
             <div class="photo-text">
               <img src="img/home-5-image-box-02.png" alt="">
               <h4>Web Development</h4>
               <p>Learn to start building a webpage from <br> scratch. You decide your own pace, <br> course and speed.</p>
-              <p>Start now</p>
+              <p>Start now <i class='fas fa-arrow-right'></i></p>
             </div>
 
             <div class="photo-text">
               <img src="img/home-5-image-box-03.png" alt="">
               <h4>System Administration </h4>
               <p>Learners are encouraged to study the <br> mechanism and structure of system <br> administration.</p>
-              <p>Start now</p>
+              <p>Start now <i class='fas fa-arrow-right'></i></p>
             </div>
 
             <div class="photo-text">
               <img src="img/home-5-image-box-04.png" alt="">
               <h4>Graphic Design</h4>
               <p>Have a passion for graphics and arts?<br> show you talents with confidence and<br> self-assertiveness.</p>
-              <p>Start now</p>
+              <p>Start now <i class='fas fa-arrow-right'></i></p>
               <!-- <i class="fas fa-arrow-right"></i> -->
             </div>
 
@@ -107,7 +109,7 @@
         </section>
 
         <!-- section career perspective -->
-        <section>
+        <section id="career">
 
           <div class="container-career">
 
@@ -118,13 +120,20 @@
             </div>
 
             <div class="right-position">
-              <span>DREAM WITH</span>
-              <span>MAX COACH</span>
-              <span>Construct A</span><span>Stunning</span>
-              <br>
-              <span>Career Perspective</span>
-              <br>
-              <button class="blu" type="button" name="button">Multiple Platforms Supported For Teaching & studying</button>
+              <div class="pos-1">
+                <span class="text-careeer-1">DREAM WITH</span>
+                <span class="text-careeer-1"><strong>MAX COACH</strong></span>
+              </div>
+              <div class="pos-2">
+                <span class="text-careeer-2">Construct A</span><span class="text-careeer-3">Stunning</span>
+                <br>
+                <span class="text-careeer-2">Career Perspective</span>
+              </div>
+
+
+              <button class="blu-" type="button" name="button">Multiple Platforms Supported For Teaching & studying</button>
+
+
               <div class="dropdown">
 
                 <p>MaxCoach supports the act of teaching and learning on multiple <br>
@@ -134,9 +143,11 @@
 
 
               </div>
-              <button class="white" type="button" name="button">Multiple Course Partecipation at the Same Time</button>
+
+
+              <button class="white" type="button" name="button"><strong>Multiple Course Partecipation at the Same Time</strong></button>
               <br>
-              <button class="white" type="button" name="button">Track Study Progress & Deliver Prompt Feedback</button>
+              <button class="white" type="button" name="button"><strong>Track Study Progress & Deliver Prompt Feedback</strong></button>
             </div>
 
 
@@ -153,7 +164,7 @@
               <p>FINISHED SESSIONS</p>
             </div>
             <div class="box">
-              <h1>3.092</h1>
+              <h1>3.092+</h1>
               <p>ENROLLED LEARNES</p>
             </div>
             <div class="box">
@@ -186,10 +197,14 @@
                 <img src="img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
                 <span>Blanche Fields</span>
 
+
               </div>
               <p>Learning to write as a <br> Professional Author</p>
-              <span>20 Lessons</span>
-              <span>50 Students</span>
+              <div class="last-lastet">
+                <span>20 Lessons</span>
+                <span>50 Students</span>
+              </div>
+
 
 
             </div>
@@ -199,11 +214,15 @@
               <div class="under-pc">
                 <img src="img/d0d504142acfde820eef2f11feea6253.jpeg" alt="">
                 <span>Meggie Strickland</span>
-                <p>Customer -centric Info.tech <br> Strategies</p>
-                <span>24 Lessons</span>
-                <span>759 Students</span>
+
               </div>
 
+              <p>Customer -centric Info.tech <br> Strategies</p>
+              <div class="last-lastet">
+                <span>24 Lessons</span>
+                <span>759 Students</span>
+
+              </div>
 
 
 
@@ -214,12 +233,14 @@
               <div class="under-pc">
                 <img src="img/d0d504142acfde820eef2f11feea6253.jpeg" alt="">
                 <span>Meggie Strickland</span>
-                <p>Open ProgrammingCourses for  <br> Everyone: Python</p>
+
+              </div>
+              <p>Open ProgrammingCourses for  <br> Everyone: Python</p>
+              <div class="last-lastet">
                 <span>17 Lessons</span>
                 <span>62 Students</span>
+
               </div>
-
-
 
 
             </div>
@@ -233,13 +254,14 @@
               <div class="under-pc">
                 <img src="img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
                 <span>Blanche Fields</span>
-                <p>Accademic Listening an Note- <br> taking</p>
+
+              </div>
+              <p>Accademic Listening an Note- <br> taking</p>
+              <div class="last-lastet">
                 <span>14 Lessons</span>
                 <span>67 Students</span>
+
               </div>
-
-
-
 
             </div>
 
@@ -248,13 +270,15 @@
               <div class="under-pc">
                 <img src="img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
                 <span>Blanche Fields</span>
-                <p>Master Jquery in a Short Period <br> of Time</p>
+
+              </div>
+              <p>Master Jquery in a Short Period <br> of Time</p>
+              <div class="last-lastet">
                 <span>6 Lessons</span>
                 <span>51 Students</span>
+
+
               </div>
-
-
-
 
             </div>
 
@@ -263,19 +287,22 @@
               <div class="under-pc">
                 <img src="img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
                 <span>Blanche Fields</span>
-                <p>Introduction for Javascript for <br> Beginners</p>
-                <span>14 Lessons</span>
-                <span>66 Students</span>
+
               </div>
 
+              <p>Introduction for Javascript for <br> Beginners</p>
+              <div class="last-lastet">
+                <span>14 Lessons</span>
+                <span>66 Students</span>
 
 
+              </div>
 
             </div>
 
           </div>
           <div class="button-latest">
-            <button class="blu"type="button" name="button">View All Courses</button>
+            <button class="blu"type="button" name="button">View All Courses <i class='fas fa-arrow-right'></i></button>
           </div>
 
 
@@ -290,10 +317,10 @@
               <span class="title-type">Learn at your  <br> Own </span><span class="word-type">Pace</span>
               <div class="under-register">
 
-                <div class="list"><i></i><span>Select & customize courses to your preferences</span></div>
-                <div class="list"><i></i><span>Change the tutor and make arrangements</span></div>
-                <div class="list"><i></i><span>Participate in events to join others </span></div>
-                <div class="list"><i></i><span>Get the desidered certificate delivered at house</span></div>
+                <div class="list"><i class='fas fa-check'></i> <span> Select & customize courses to your preferences</span></div>
+                <div class="list"><i class='fas fa-check'></i> <span> Change the tutor and make arrangements</span></div>
+                <div class="list"><i class='fas fa-check'></i> <span> Participate in events to join others </span></div>
+                <div class="list"><i class='fas fa-check'></i> <span> Get the desidered certificate delivered at house</span></div>
 
               </div>
 
@@ -363,7 +390,7 @@
             <div class="background-box">
               <div class="left-box-back">
 
-                <i class="fa fa-map-marker"></i><span class="box-1">Texas,US</span>
+                <i class="fa fa-map-marker"></i><span class="box-1"> Texas,US</span>
                 <p class="box-2">Storytelling Workshop</p>
 
               </div>
@@ -382,7 +409,7 @@
             <div class="background-box">
               <div class="left-box-back">
 
-                <i class="fa fa-map-marker"></i><span class="box-1">New York,US</span>
+                <i class="fa fa-map-marker"></i><span class="box-1"> New York,US</span>
                 <p class="box-2">Painting Art Contest 2000</p>
 
               </div>
@@ -404,7 +431,7 @@
             <div class="background-box">
               <div class="left-box-back">
 
-                <i class="fa fa-map-marker"></i><span class="box-1">Hamburg,Germany</span>
+                <i class="fa fa-map-marker"></i><span class="box-1"> Hamburg,Germany</span>
                 <p class="box-2">International Art Fair 2020</p>
 
               </div>
@@ -423,7 +450,7 @@
             <div class="background-box">
               <div class="left-box-back">
 
-                <i class="fa fa-map-marker"></i><span class="box-1">Illinois,US</span>
+                <i class="fa fa-map-marker"></i><span class="box-1"> Illinois,US</span>
                 <p class="box-2">Street performance: call for artist</p>
 
               </div>
@@ -431,7 +458,7 @@
 
                 <p class="box-3">15</p>
                 <p class="box-4">DEC</p>
-                <button class="box-button" type="button" name="button">Get ticket</button>
+                <button class="box-button" type="button" name="button"> Get ticket</button>
 
               </div>
 
@@ -445,7 +472,7 @@
             <div class="background-box">
               <div class="left-box-back">
 
-                <i class="fa fa-map-marker"></i><span class="box-1">Illinois,US</span>
+                <i class="fa fa-map-marker"></i><span class="box-1"> Illinois,US</span>
                 <p class="box-2">Consumer food safety education <br> Conference</p>
 
               </div>
@@ -464,7 +491,7 @@
             <div class="background-box">
               <div class="left-box-back">
 
-                <i class="fa fa-map-marker"></i><span class="box-1">Dubai</span>
+                <i class="fa fa-map-marker"></i><span class="box-1"> Dubai</span>
                 <p class="box-2">How meditation improve your mental <br> Health? </p>
 
               </div>
@@ -496,7 +523,7 @@
 
             <div class="text-build-dream">
 
-              <p>PEOPLE ARE PRAISING MAXCOACH</p>
+              <p class="color">PEOPLE ARE PRAISING MAXCOACH</p>
               <span class="title-type">What make they </span><span class="word-type">Love Us?</span>
 
             </div>
@@ -568,7 +595,7 @@
 
 
       </main>
-
+    <div id="app">
       <!-- inizio footer -->
       <footer>
 
@@ -591,12 +618,14 @@
           <div class="explore">
 
             <h2>Explore</h2>
-
-            <div v-for="link in explore" class="text-ex">
+            <!-- le prime tre voci del explore prese...devo capire come girarle -->
+            <div v-for="link in explore.slice(explore.length / 2)" class="text-ex">
               <a :href="link.href">{{link.link}}</a>
             </div>
 
           </div>
+
+
           <!-- section right -->
           <div class="information">
 
@@ -615,12 +644,17 @@
 
 
         </div>
+        <!-- copyright -->
+        <div class="copyright">
+          <i class='far fa-copyright'></i><span>{{copyright}}</span>
+
+        </div>
 
       </footer>
 
     </div>
 
-
+    <script src="js/header.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
