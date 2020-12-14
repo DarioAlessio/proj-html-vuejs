@@ -29,6 +29,8 @@ nav{
 .nav-bar{
   font-size: 12px;
   padding-right: 18px;
+  position: relative;
+
 }
 
 .logo > img {
@@ -82,9 +84,22 @@ input{
 }
 
 /* dropdown */
+.dropdown {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  background-color:#01afc8;
+  padding: 2px 5px;
+  border-radius: 3px;
+  max-width: 50px;
+  text-align: center;
+  display: none;
+  color: #513e5e;
+}
 
-
-
+.dropdown.active {
+  display: block;
+}
 
 /* inizio main */
 

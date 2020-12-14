@@ -24,9 +24,16 @@
               <img :src="imageLogo" alt="">
             </div>
 
-             <div v-for="(nav, index) in navs" class="nav-bar">
-                {{nav.name}}
+             <div v-for="(item, index) in navs" class="nav-bar" @click="apri(index)">
+                {{item.name}}
                 <i class='fas fa-chevron-down'></i>
+                <div :class="['dropdown',{active: open===index}]" @mouseleave="chiudi(index)">
+                  <div v-for="list in item.lists">
+                    <a :href="list.href">{{list.list}}</a>
+                  </div>
+                </div>
+
+
              </div>
 
              <div class="icon-nav">

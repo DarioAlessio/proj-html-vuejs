@@ -3,31 +3,34 @@ var header = new Vue({
   data:{
     // header
     imageLogo: "img/dark-logo.png",
+    open: false,
     navs: [
       {
         name:"Home",
-        open:"true",
         lists:[
           {
-            element:"one",
+            list:"one",
             href: "#"
           },
           {
-            element:"two",
+            list:"two",
             href: "#"
           }
         ]
       },
       {
         name:"Pages",
-        open:"false",
         lists:[
           {
-            element:"one",
+            list:"one",
             href: "#"
           },
           {
-            element:"two",
+            list:"one",
+            href: "#"
+          },
+          {
+            list:"two",
             href: "#"
           }
         ]
@@ -35,14 +38,13 @@ var header = new Vue({
       },
       {
         name:"Courses",
-        open:"false",
         lists:[
           {
-            element:"one",
+            list:"one",
             href: "#"
           },
           {
-            element:"two",
+            list:"two",
             href: "#"
           }
         ]
@@ -50,14 +52,17 @@ var header = new Vue({
       },
       {
         name:"Features",
-        open:"false",
         lists:[
           {
-            element:"one",
+            list:"one",
             href: "#"
           },
           {
-            element:"two",
+            list:"one",
+            href: "#"
+          },
+          {
+            list:"two",
             href: "#"
           }
         ]
@@ -65,28 +70,30 @@ var header = new Vue({
       },
       {
         name:"Blog",
-        open:"false",
         lists:[
           {
-            element:"one",
+            list:"one",
             href: "#"
           },
           {
-            element:"two",
+            list:"two",
             href: "#"
           }
         ]
       },
       {
         name:"Shop",
-        open:"false",
         lists:[
           {
-            element:"one",
+            list:"one",
             href: "#"
           },
           {
-            element:"two",
+            list:"one",
+            href: "#"
+          },
+          {
+            list:"two",
             href: "#"
           }
         ]
@@ -95,7 +102,16 @@ var header = new Vue({
 
     ]
 
+  },
+  methods: {
+  apri: function(index) {
+    this.open = index;
+  },
+
+  chiudi: function(index) {
+    this.open = false;
   }
+}
 
 
 });
