@@ -88,7 +88,7 @@ input{
   position: absolute;
   top: 25px;
   right: 0px;
-  background-color:#01afc8;
+  background-color:white;
   padding: 2px 5px;
   border-radius: 3px;
   max-width: 50px;
@@ -101,13 +101,8 @@ input{
   display: block;
 }
 
-/* inizio main */
 
-
-
-
-/* parte jumbotron
----------------------inizio main -------------------------- */
+/* ---------------------inizio main -------------------------- */ */
 .onda{
 
 }
@@ -267,7 +262,7 @@ input{
 
 }
 
-.dropdown{
+.dropdown0{
   margin-top: 15px;
   width: 600px;
   background-color: white;
@@ -321,7 +316,7 @@ input{
   color: #22ad96;
 }
 
-.dropdown{
+.dropdown0{
   width:300px;
 }
 
