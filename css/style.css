@@ -839,9 +839,19 @@ h2, p {
 
 }
 
+.explore2 {
+  padding-top: 37px;
+
+}
+
+.explore2 a {
+  display: flex;
+  width: 100px;
+}
+
 .explore a {
   display: flex;
-  width: 200px;
+  width: 100px;
 }
 
 .text-ex > a {

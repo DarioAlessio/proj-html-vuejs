@@ -639,12 +639,19 @@
           <div class="explore">
 
             <h2>Explore</h2>
-            <!-- le prime tre voci di explore...devo capire come girarle le altre 3-->
-            <div v-for="link in explore.slice(explore.length / 2)" class="text-ex">
+            <!-- le prime tre voci di explore-->
+            <div v-for="link in explore.slice(0,(explore.length/2))" class="text-ex">
               <a :href="link.href">{{link.link}}</a>
             </div>
 
-            
+          </div>
+
+          <div class="explore2">
+            <!-- le ultime tre voci di explore -->
+            <div v-for="link in explore.slice((explore.length / 2),(explore.length ))" class="text-ex">
+              <a :href="link.href">{{link.link}}</a>
+            </div>
+
           </div>
 
           <!-- section right -->
